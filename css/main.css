@@ -2,8 +2,17 @@
    font-size: 12px;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    
-   --color-text: #212121;
+   --color-text: #100f16;
    --primary-100: #fefefe;
+
+   scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+   :root{
+      --color-text: #fefefe;
+      --primary-100: #100f16;
+   }
 }
 
 *{
@@ -13,25 +22,47 @@
    box-sizing: border-box;
 }
 
+.button_primary{
+   background: var(--color-text);
+   color: var(--primary-100);
+
+   font-size: 2rem;
+   font-weight: 600;
+
+   padding: 1rem 2rem;
+   border-radius: .5rem;
+
+   text-decoration: none;
+}
+
 html, body{
    width: 100%;
-   height: 100%;
+   height: auto;
    background: var(--primary-100);
 }
 
 header{
+   background: var(--primary-100);
    padding: 0 5%;
    min-height: 6rem;
    max-height: 8rem;
 
    display: flex;
    align-items: center;
+
+   position: sticky;
+   position: -webkit-sticky;
+   top: 0;
+   left: 0;
 }
 
-header > img{
-   max-width: 8rem;
-   height: auto;
+header > picture{
    margin-right: auto;
+}
+
+header > picture > img{
+   max-height: 8rem;
+   width: auto;
 }
 
 header > ul{
@@ -49,4 +80,29 @@ header > ul > li > a{
    font-size: 2rem;
    color: var(--color-text);
    text-decoration: none;
+}
+
+header > ul > li > a:hover{
+   border-bottom: var(--color-text) 3px solid;
+}
+
+header > ul > li > a#active{
+   font-weight: 600;
+   border-bottom: var(--color-text) 3px solid;
+}
+
+#sectionWelcome{
+   min-height: 80vh;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+}
+
+#sectionAbout{
+   min-height: 60vh;
+}
+
+#sectionProjects{
+   min-height: 60vh;
+   display: grid;
 }

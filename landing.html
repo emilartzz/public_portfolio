@@ -13,25 +13,33 @@
 
    <header>
 
-      <img src="./img/brand_192x192.jpg" alt="W">
+      
+      <picture>
+         <source srcset="./img/brand_192x192_light.jpg" media="(prefers-color-scheme: dark)">
+         <img src="./img/brand_192x192.jpg" alt="Warelius - Branding">
+      </picture>
 
       <ul>
-         <li><a href="#">Home</a></li>
-         <li><a href="#">About</a></li>
-         <li><a href="#">Contact</a></li>
+         <li><a href="#sectionWelcome" id="active">Home</a></li>
+         <li><a href="#sectionAbout">About</a></li>
+         <li><a href="#sectionProjects">Projects</a></li>
+         <li><a href="#sectionContact">Contact</a></li>
       </ul>
 
    </header>
 
    <main>
 
-
+      <section id="sectionWelcome">
+         <a class="button_primary contact" href="mailto:hello@warelius.net">Contact me</a>
+      </section>
+      <section id="sectionAbout"></section>
+      <section id="sectionProjects"></section>
+      <section id="sectionContact"></section>
 
    </main>
 
-   <footer>
-
-   </footer>
+   <script src="./js/app.js"></script>
    
 </body>
 </html>
