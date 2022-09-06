@@ -12,7 +12,6 @@
 <body>
 
    <header>
-
       
       <picture>
          <source srcset="./img/brand_192x192_light.jpg" media="(prefers-color-scheme: dark)">
@@ -20,7 +19,7 @@
       </picture>
 
       <ul>
-         <li><a href="#sectionWelcome" id="active">Home</a></li>
+         <li><a href="#sectionWelcome" class="active">Home</a></li>
          <li><a href="#sectionAbout">About</a></li>
          <li><a href="#sectionProjects">Projects</a></li>
          <li><a href="#sectionContact">Contact</a></li>
@@ -31,13 +30,31 @@
    <main>
 
       <section id="sectionWelcome">
-         <a class="button_primary contact" href="mailto:hello@warelius.net">Contact me</a>
+         <div>
+            <h1>Hello!</h1>
+            <a class="button_primary contact" href="mailto:hello@warelius.net">Contact me</a>
+         </div>
       </section>
       <section id="sectionAbout"></section>
-      <section id="sectionProjects"></section>
-      <section id="sectionContact"></section>
+      <section id="sectionProjects">
+         <div>Project One</div>
+         <div>Project Two</div>
+         <div>Project Three</div>
+         <div>Project Four</div>
+         <div>Project Five</div>
+         <div>Project Six</div>
+         <div>Project Seven</div>
+         <div>Project Eight</div>
+      </section>
+      <section id="sectionContact">
+         <a class="button_primary contact" href="mailto:hello@warelius.net">Contact me</a>
+      </section>
 
    </main>
+
+   <footer>
+      &copy; 2022 Emil Warelius
+   </footer>
 
    <script src="./js/app.js"></script>
    
