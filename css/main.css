@@ -126,8 +126,8 @@ section{
 }
 
 #sectionAbout{
-   min-height: 60vh;
-   background: #fefefe;
+   min-height: 75vh;
+   background: var(--color-text);
 }
 
 #sectionProjects{
@@ -171,6 +171,6 @@ footer{
    justify-content: center;
    align-items: center;
 
-   background: var(--primary-400);
-   color: var(--color-text);
+   background: var(--color-text);
+   color: var(--primary-100);
 }
