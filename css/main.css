@@ -36,10 +36,12 @@
    font-size: 2rem;
    font-weight: 600;
 
+   margin: 1rem;
    padding: 1rem 2rem;
    border-radius: .5rem;
 
    text-decoration: none;
+   text-align: center;
    
    box-shadow: .3rem .3rem 0 .3rem var(--color-accent);
 }
@@ -57,6 +59,10 @@ html, body{
    width: 100%;
    height: auto;
    background: var(--primary-100);
+}
+
+h2{
+   color: var(--color-text);
 }
 
 header{
@@ -127,7 +133,7 @@ header > ul > li{
 
 header > ul > li > a{
    font-size: 2rem;
-   color: var(--color-text);
+   color: var(--color-text);h3
    text-decoration: none;
 }
 
@@ -151,6 +157,9 @@ main{
 section{
    margin: 3rem 0;
    border-radius: .5rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 100%);
+   row-gap: 1rem;
 }
 
 #sectionWelcome{
@@ -158,25 +167,23 @@ section{
    display: grid;
    justify-content: center;
    align-items: center;
+   text-align: center;
 }
 
 #sectionAbout{
-   min-height: 75vh;
-   background: var(--color-text);
+   height: auto;
    transition: all .2s ease-in-out;
+}
+
+#sectionAbout > div{
+   background: var(--color-text);
+   padding: 1rem;
+   border-radius: .5rem;
+   height: 30rem;
 }
 
 #sectionProjects{
    height: auto;
-   display: grid;
-   grid-template-columns: repeat(auto-fit, 100%);
-   row-gap: 1rem;
-   justify-content: center;
-   align-items: center;
-}
-
-#sectionProjects > h3{
-   color: var(--color-text);
 }
 
 #sectionProjects > div{
@@ -197,10 +204,26 @@ section{
 }
 
 #sectionContact{
-   height: 75vh;
-   display: flex;
+   height: 50vh;
+   display: grid;
    justify-content: center;
    align-items: center;
+}
+
+#sectionContact > div{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   justify-content: center;
+   align-items: center;
+}
+
+#sectionContact > div > h2{
+   grid-column: 1 / 4;
+   text-align: center;
+}
+
+#sectionContact > div > a{
+   grid-row: 2;
 }
 
 footer{
