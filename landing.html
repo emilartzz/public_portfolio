@@ -7,6 +7,8 @@
    <title>Emil Warelius - 2022 Portfolio</title>
 
    <link rel="stylesheet" href="css/main.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
    <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon">
    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
@@ -33,6 +35,14 @@
          <img src="./img/brand_192x192.jpg" alt="Warelius - Branding">
       </picture>
 
+      <label id="menuHamburger" for="menuToggle">
+         <span></span>
+         <span></span>
+         <span></span>
+      </label>
+
+      <input type="checkbox" name="menuToggle" id="menuToggle">
+
       <ul>
          <li><a href="#sectionWelcome" class="active">Home</a></li>
          <li><a href="#sectionAbout">About</a></li>
@@ -51,6 +61,7 @@
       </section>
       <section id="sectionAbout"></section>
       <section id="sectionProjects">
+         <h3>My Work</h3>
          <div>Project One</div>
          <div>Project Two</div>
          <div>Project Three</div>
@@ -59,7 +70,10 @@
          <div>Project Six</div>
       </section>
       <section id="sectionContact">
-         <a class="button_primary contact" href="mailto:hello@warelius.net">Contact me</a>
+         <a class="button_primary contact" href="mailto:hello@warelius.net">
+            <span class="material-icons">email</span>
+         </a>
+         <a class="button_primary contact" href="https://github.com/user/emilartzz">Github</a>
       </section>
 
    </main>
