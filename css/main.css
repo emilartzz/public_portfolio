@@ -72,6 +72,7 @@ header{
 
    display: grid;
    grid-template-columns: repeat(99, max-content) 1fr [last];
+   grid-template-rows: 8rem 1fr;
    align-items: center;
 
    position: sticky;
@@ -85,7 +86,7 @@ header > picture{
 }
 
 header > picture > img{
-   max-height: 8rem;
+   max-height: 6rem;
    width: auto;
 }
 
@@ -101,7 +102,7 @@ header > picture > img{
    display: grid;
    width: 4rem;
    height: 2.5rem;
-   gap: .3rem;
+   gap: .4rem;
 }
 
 #menuHamburger > span{
@@ -111,13 +112,30 @@ header > picture > img{
    background: var(--color-text);
 
    border-radius: .2rem;
+
+   transition: all .2s ease-in-out;
 }
 
 #menuToggle:checked ~ ul{
    display: block;
 }
 
+#menuToggle:checked ~ #menuHamburger > span:nth-child(1){
+   transform: translateY(0.4rem);
+}
+
+#menuToggle:checked ~ #menuHamburger > span:nth-child(2){
+   transform: scale(0);
+
+   opacity: 0;
+}
+
+#menuToggle:checked ~ #menuHamburger > span:nth-child(3){
+   transform: translateY(-0.4rem);
+}
+
 header > ul{
+   z-index: 100;
    padding: 2rem 0;
    grid-column: 1 / 102;
    display: none;
@@ -133,7 +151,7 @@ header > ul > li{
 
 header > ul > li > a{
    font-size: 2rem;
-   color: var(--color-text);h3
+   color: var(--color-text);
    text-decoration: none;
 }
 
