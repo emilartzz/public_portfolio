@@ -200,6 +200,10 @@ section{
    height: 30rem;
 }
 
+#sectionAbout > div > *{
+   color: var(--primary-100);
+}
+
 #sectionProjects{
    height: auto;
 }
@@ -219,6 +223,13 @@ section{
 
 #sectionProjects > div:hover{
    box-shadow: .6rem .6rem 0 .6rem var(--color-accent);
+}
+
+#sectionProjects > div > img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: inherit;
 }
 
 #sectionContact{
