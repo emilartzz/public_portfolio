@@ -1,7 +1,0 @@
-ErrorDocument 500 /errors/500.html
-ErrorDocument 401 /errors/401.html
-ErrorDocument 404 /errors/404.html
-
-<!-- Order deny,allow
-Deny from all
-Allow from 92.244.220.137 -->
