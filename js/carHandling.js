@@ -26,16 +26,12 @@ export class Car{
 
    }
 
-   Brake(){
+   BrakeAndReverse(){
       console.log("Car braking...");
 
-      if (this.curentSpeed <= 0) {
-         this.Reverse();
-      }
-      else{
-         this.curentSpeed = Math.min(Math.max(this.curentSpeed + this.deceleration, 0), this.maxSpeed);
-         this.vehicle.translateZ(this.curentSpeed);
-      }
+      this.curentSpeed = Math.min(Math.max(this.curentSpeed + this.deceleration, 0), this.maxSpeed);
+      this.vehicle.translateZ(this.curentSpeed);
+
    }
 
    TurnLeft(){
@@ -79,7 +75,7 @@ export class Car{
    Reverse(){
       console.log("Car reversing...");
 
-      this.curentSpeed = Math.min(Math.max(this.curentSpeed + this.acceleration, -this.maxReverseSpeed), 0);
+      this.curentSpeed = Math.min(Math.max(this.curentSpeed - this.acceleration, -this.maxReverseSpeed), 0);
       this.vehicle.translateZ(this.curentSpeed);
 
    }

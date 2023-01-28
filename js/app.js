@@ -16,7 +16,7 @@ export class App{
             this.CarHandle.Accelerate(true);
          }
          if(event.key === 'ArrowDown' || event.key === 's'){
-            this.CarHandle.Brake(true);
+            this.CarHandle.BrakeAndReverse(true);
          }
          if(event.key === 'ArrowLeft' || event.key === 'a'){
             this.CarHandle.TurnLeft(true);

@@ -144,6 +144,8 @@ export class Scene{
    }
 
    updateCamera(){
+      this.camera.lookAt(this.car.position);
+
       this.camera.position.x = this.car.position.x;
       this.camera.position.y = this.car.position.y + 1.5;
       this.camera.position.z = this.car.position.z + 4;
