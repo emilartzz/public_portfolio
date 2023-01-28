@@ -6,28 +6,39 @@ export class App{
       console.log("Application started...");
 
       this.applicationScene = new Scene;
-      this.CarHandle = new Car;
-
-      console.log(this.applicationScene);
+      setTimeout(() => {
+         this.vehicle = this.applicationScene.scene.children[1];
+         this.CarHandle = new Car(this.vehicle);
+      }, 1000);
 
       document.addEventListener('keydown', (event) => {
-         switch(event.key){
-            case 'ARROWUP' || 'w':
-               this.vehicle.Accelerate();
-               break;
-            case 'ARROWDOWN' || 's':
-               this.vehicle.Brake();
-               break;
-            case 'ARROWLEFT' || 'a':
-               this.vehicle.TurnLeft();
-               break;
-            case 'ARROWRIGHT' || 'd':
-               this.vehicle.TurnRight();
-               break;
-            case 'h':
-               this.vehicle.Honk();
-               break;
-         }});
+         if(event.key === 'ArrowUp' || event.key === 'w'){
+            this.CarHandle.Accelerate();
+         }
+         if(event.key === 'ArrowDown' || event.key === 's'){
+            this.CarHandle.Brake();
+         }
+         if(event.key === 'ArrowLeft' || event.key === 'a'){
+            this.CarHandle.TurnLeft();
+         }
+         if(event.key === 'ArrowRight' || event.key === 'd'){
+            this.CarHandle.TurnRight();
+         }
+         if(event.key === 'h'){
+            this.CarHandle.Honk();
+         }
+
+         this.CarHandle.ExportSpeed();
+      });
+
+      document.addEventListener('keyup', (event) => {
+         if(event.key === 'ArrowUp' || event.key === 'w'){
+            this.CarHandle.EngineBrake();
+         }
+         if(event.key === 'ArrowDown' || event.key === 's'){
+            this.CarHandle.EngineBrake();
+         }
+      });
 
    }
 

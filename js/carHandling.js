@@ -1,44 +1,88 @@
 import { App } from './app';
+import * as THREE from 'three';
 
 export class Car{
-   constructor(){
-      console.log("Car created...");
+   constructor(vehicle){
+      console.log("Car handling created...");
 
-      this.applicationScene = App.applicationScene;
-      this.vehicle = App.vehicle;
+      this.vehicle = vehicle;
+      console.log(this.vehicle);
 
       this.curentSpeed = 0;
       this.maxSpeed = 100;
-      this.acceleration = 0.1;
-      this.deceleration = 0.1;
+      this.maxReverseSpeed = -15;
+      this.acceleration = 0.01;
+      this.deceleration = -0.01;
       this.steering = 0;
       this.maxSteering = 0.05;
-
-      console.log(this.vehicle);
 
    }
 
    Accelerate(){
       console.log("Car accelerating...");
 
-      this.curentSpeed = THREE.Math.clamp(this.curentSpeed + this.acceleration, 0, this.maxSpeed);
+      this.curentSpeed = Math.min(Math.max(this.curentSpeed + this.acceleration, 0), this.maxSpeed);
       this.vehicle.translateZ(this.curentSpeed);
+
    }
 
    Brake(){
       console.log("Car braking...");
+
+      if (this.curentSpeed <= 0) {
+         this.Reverse();
+      }
+      else{
+         this.curentSpeed = Math.min(Math.max(this.curentSpeed + this.deceleration, 0), this.maxSpeed);
+         this.vehicle.translateZ(this.curentSpeed);
+      }
    }
 
    TurnLeft(){
       console.log("Car turning left...");
+
+      this.steering = Math.min(Math.max(this.steering + this.maxSteering, -this.maxSteering), this.maxSteering);
+      this.vehicle.rotateY(this.steering);
    }
 
    TurnRight(){
       console.log("Car turning right...");
+
+      this.steering = Math.min(Math.max(this.steering - this.maxSteering, -this.maxSteering), this.maxSteering);
+      this.vehicle.rotateY(this.steering);
    }
 
    Honk(){
       console.log("Car honking...");
+   }
+
+   ExportSpeed(){
+      console.log('Current speed: ' + this.curentSpeed);
+   }
+
+   EngineBrake(){
+      console.log("Car engine braking...");
+
+      while (this.curentSpeed > 0) {
+         setInterval(() => {
+            if (this.curentSpeed > 0) {
+               this.curentSpeed = Math.min(Math.max(this.curentSpeed + this.deceleration, 0), this.maxSpeed);
+               this.vehicle.translateZ(this.curentSpeed);
+            }
+            else{
+               clearInterval();
+            }
+         }, 50);
+      }
+
+   }
+
+   Reverse(){
+      console.log("Car reversing...");
+
+      this.curentSpeed = Math.min(Math.max(this.curentSpeed + this.acceleration, -this.maxReverseSpeed), 0);
+      this.vehicle.translateZ(this.curentSpeed);
+
    }
 
 

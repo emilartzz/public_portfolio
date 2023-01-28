@@ -87,6 +87,7 @@ export class Scene{
       this.loader.load('./models/car/scene.gltf', (gltf) => {
          
          this.car = gltf.scene;
+
          this.scene.add(this.car);
 
          this.initiateLights();
@@ -138,12 +139,21 @@ export class Scene{
       this.controls = new OrbitControls(this.camera, this.renderer.domElement);
 
       this.animate();
+
+      console.log(this.scene.children[1]);
+   }
+
+   updateCamera(){
+      this.camera.position.x = this.car.position.x;
+      this.camera.position.y = this.car.position.y + 1.5;
+      this.camera.position.z = this.car.position.z + 4;
    }
 
    animate(){
-      requestAnimationFrame(this.animate.bind(this));
+      this.updateCamera();
       this.controls.update();
       this.renderer.render(this.scene, this.camera);
+      requestAnimationFrame(this.animate.bind(this));
    }
 
 }
