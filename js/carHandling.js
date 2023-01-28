@@ -63,16 +63,15 @@ export class Car{
    EngineBrake(){
       console.log("Car engine braking...");
 
-      while (this.curentSpeed > 0) {
-         setInterval(() => {
-            if (this.curentSpeed > 0) {
-               this.curentSpeed = Math.min(Math.max(this.curentSpeed + this.deceleration, 0), this.maxSpeed);
-               this.vehicle.translateZ(this.curentSpeed);
-            }
-            else{
-               clearInterval();
-            }
-         }, 50);
+      if (this.curentSpeed > 0.00) {
+         console.log('Engine braking...');
+         this.curentSpeed = Math.min(Math.max(this.curentSpeed + this.deceleration, 0), this.maxSpeed);
+         this.vehicle.translateZ(this.curentSpeed);
+         this.ExportSpeed();
+         setTimeout(this.EngineBrake.bind(this), 30);
+      }
+      else{
+         return;
       }
 
    }

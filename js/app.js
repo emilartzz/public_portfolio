@@ -13,16 +13,16 @@ export class App{
 
       document.addEventListener('keydown', (event) => {
          if(event.key === 'ArrowUp' || event.key === 'w'){
-            this.CarHandle.Accelerate();
+            this.CarHandle.Accelerate(true);
          }
          if(event.key === 'ArrowDown' || event.key === 's'){
-            this.CarHandle.Brake();
+            this.CarHandle.Brake(true);
          }
          if(event.key === 'ArrowLeft' || event.key === 'a'){
-            this.CarHandle.TurnLeft();
+            this.CarHandle.TurnLeft(true);
          }
          if(event.key === 'ArrowRight' || event.key === 'd'){
-            this.CarHandle.TurnRight();
+            this.CarHandle.TurnRight(true);
          }
          if(event.key === 'h'){
             this.CarHandle.Honk();
