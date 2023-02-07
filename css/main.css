@@ -20,6 +20,11 @@
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
 }
 
+::selection{
+  background: var(--color-secondary);
+  color: var(--color-primary-dimmed);
+}
+
 html, body{
   padding: 0 5%;
   height: 100%;
