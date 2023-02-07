@@ -1,39 +1,132 @@
 <!DOCTYPE html>
-<html lang="sv" style="background: white;">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Emil Warelius - 2022 Portfolio</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <link rel="stylesheet" href="css/main.css">
+    <meta name="description" content="Emil Warelius - 2023" />
+    <meta name="author" content="Emil Warelius" />
+    <meta name="keywords" content="Emil, Warelius, 2023, Portfolio, Web, developer, UI/UX" />
 
-   <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon">
-   <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
-   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-   <link rel="manifest" href="./img/favicon/site.webmanifest">
-   <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#fefefe">
-   <meta name="msapplication-TileColor" content="#fefefe">
-   <meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
-   <meta name="theme-color" content="#100f16" media="(prefers-color-scheme: dark)">
-   <meta name="theme-color" content="#fefefe">
+    <link rel="stylesheet" href="/css/main.css">
 
-   <meta content="yes" naxme="apple-mobile-web-app-capable">
-   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Emil Warelius - 2023</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <a href="/">Emil Warelius</a>
+        <nav>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="mailto:hello@warelius.net">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-</head>
-<body style="display: grid; justify-content: center; align-items: center; text-align: center; background: white;">
+      <main>
 
-   <img src="./img/bear_Construction.webp" alt="Cute bear with construction helmet, thinking about something" style="width: 50%; height: auto; margin: 5% auto;">
+        <h1>Hi, Emil here! I am UI/UX Developer based in Värnamo, Sweden.</h1>
+        
 
-   <h1 style="color: #100f16; margin: 1rem 0;">
-      <a href="mailto:hello@warelius.net" style="color: #100f16; font-size: 3rem;">
-         hello@warelius.net
-      </a>
-   </h1>
-   
-   
-</body>
+        <div id="projects-grid">
+          <div class="grid-item col-2">
+            <img src="./img/projects/dice-application.png" alt="Dice Application">
+            <div class="overlay hidden">
+              <span class="project-title">Dice Application</span>
+              <span class="project-description">As a part of the Webbtechnologies 5 course, a project was undertaken to develop a dice application using (OOP) concepts. This project aimed to bring the students' understanding of OOP principles into practice by developing a functional application that incorporated the use of classes, objects, methods etc.</span>
+              <div class="lang-and-tech">
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <i class="fa-brands fa-css3-alt fa-2x"></i>
+                <i class="fa-brands fa-js fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/projects/food-order.png" alt="Food-order">
+            <div class="overlay hidden">
+              <span class="project-title">Food Order</span>
+              <span class="project-description">
+                Designed an intuitive and visually appealing interface for a fast food ordering process. The project included UI and UX designing where user testing was conducted to ensure that needs and expectations were met. The end result was a successful food ordering UI with positive feedback from users.
+              </span>
+              <div class="lang-and-tech">
+                <i class="fa-brands fa-figma fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/projects/trip-it.png" alt="Trip-it">
+            <div class="overlay hidden">
+              <span class="project-title">Trip-it</span>
+              <span class="project-description">
+                A travel application developed using an external API to provide information services for a selected city. It offers easy access to accomodation, food, and miscellaneous information, streamlining the travel process for users.
+              </span>
+              <div class="lang-and-tech">
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <i class="fa-brands fa-css3-alt fa-2x"></i>
+                <i class="fa-brands fa-js fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/projects/vb_internal.png" alt="ValoeBeats">
+            <div class="overlay hidden">
+              <span class="project-title">ValoeBeats</span>
+              <span class="project-description">
+                An application developed for the producer ValoeBeats. The application was developed to provide a platform for the producer to upload, monetize, and share his music. The application was developed using PHP, SQL, and MySQL.
+              </span>
+              <div class="lang-and-tech">
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <i class="fa-brands fa-css3-alt fa-2x"></i>
+                <i class="fa-brands fa-js fa-2x"></i>
+                <i class="fa-brands fa-php fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/projects/vb_internal.png" alt="ValoeBeats">
+            <div class="overlay hidden">
+              <span class="project-title">ValoeBeats</span>
+              <span class="project-description">
+                An application developed for the producer ValoeBeats. The application was developed to provide a platform for the producer to upload, monetize, and share his music. The application was developed using PHP, SQL, and MySQL.
+              </span>
+              <div class="lang-and-tech">
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <i class="fa-brands fa-css3-alt fa-2x"></i>
+                <i class="fa-brands fa-js fa-2x"></i>
+                <i class="fa-brands fa-php fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item col-2">
+            <img src="./img/projects/f-o-r-u-m.png" alt="F-O-R-U-M">
+            <div class="overlay hidden">
+              <span class="project-title">F-O-R-U-M</span>
+              <span class="project-description">
+                This project was undertaken to develop a forum using PHP, SQL, and MySQL. The goal was to provide hands-on experience with these technologies by creating a functional online forum where users could create accounts, post discussions, and interact with each other.
+              </span>
+              <div class="lang-and-tech">
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <i class="fa-brands fa-css3-alt fa-2x"></i>
+                <i class="fa-brands fa-js fa-2x"></i>
+                <i class="fa-brands fa-php fa-2x"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+      <footer>
+        <a href="mailto:hello@warelius.net">hello@warelius.net</a>
+        <p>2023</p>
+      </footer>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/cf61a27cbe.js" crossorigin="anonymous"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
