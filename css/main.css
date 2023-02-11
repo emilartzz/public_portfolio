@@ -31,6 +31,43 @@ html, body{
   background: var(--color-primary);
 }
 
+#sorry-message{
+  padding: 0 5%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+#sorry-message p{
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+#sorry-message button{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--color-primary);
+  background: var(--color-secondary);
+  padding: .5rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: .25rem;
+}
+
+#oops > *{
+  text-decoration: none;
+}
+
+#oops > span{
+  font-size: 5rem;
+}
+
 #app{
 
   height: 100%;
@@ -168,7 +205,7 @@ h1{
 
 .grid-item img{
    height: 30rem;
-   width: 30rem;
+   width: 100%;
    object-fit: cover;
    border-radius: 1rem 1rem 0 0;
 }
@@ -257,12 +294,15 @@ border-bottom: var(--color-secondary) 1px solid;
 
 @media screen and (min-width: 768px) {
 
+  #sorry-message{
+    height: 5rem;
+  }
    
    /* Header */
 
    header{
    width: 100%;
-   height: 10rem;
+   min-height: 10rem;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -282,10 +322,15 @@ border-bottom: var(--color-secondary) 1px solid;
    display: flex;
    flex-direction: row;
    gap: 3rem;
+
+   border-bottom: none;
    }
 
    /* Main */
 
+   h1{
+    margin: 2rem 0 5% 0;
+   }
 
    #projects-grid{
    display: grid;
@@ -312,6 +357,12 @@ border-bottom: var(--color-secondary) 1px solid;
    opacity: 0;
    display: none;
    }
+
+   .grid-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+ }
 
    .grid-item .overlay{
 
