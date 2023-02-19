@@ -28,6 +28,8 @@
 html, body{
   height: 100%;
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto; 
   background: var(--color-primary);
 }
 
@@ -269,6 +271,7 @@ justify-content: center;
 align-items: center;
 gap: .5rem;
 background-color: var(--color-primary);
+margin: 2rem 0;
 }
 
 footer p{
@@ -277,6 +280,7 @@ font-size: 1rem;
 font-weight: 400;
 color: var(--color-secondary-light);
 text-align: center;
+margin: 0 0 2rem 0;
 }
 
 footer a{
