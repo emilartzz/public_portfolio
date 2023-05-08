@@ -62,12 +62,44 @@ html, body{
   border-radius: .25rem;
 }
 
-#oops > *{
-  text-decoration: none;
+#about-me-text{
+   line-height: 4.25rem;
 }
 
-#oops > span{
-  font-size: 5rem;
+#about-me-text span{
+   display: block;
+   font-weight: bold;
+   font-size: 6rem;
+   margin: 3rem 0; 
+}
+
+#about-me-text a{
+   width: fit-content;
+   padding: 1rem 2rem;
+   border-radius: .25rem;
+   text-decoration: none;
+   color: var(--color-secondary);
+   border: solid 1px var(--color-secondary);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   border-radius: .5rem;
+   margin: 0 auto;
+}
+
+#about-me-text a i{
+   font-size: 2rem;
+}
+
+.inverted{
+   background-color: var(--color-secondary);
+   color: var(--color-primary);
+   padding: 1rem 0;
+   font-weight: normal;
+   font-size: 3rem !important;
+   margin: 0 !important;
+   width: fit-content;
 }
 
 #app{
