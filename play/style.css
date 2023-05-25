@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    position: fixed;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #141414;
+}
+
+canvas{
+    width: 1280px !important;
+    height: 720px !important;
+}
+
+#ambience{
+    filter: blur(25px);
+    -webkit-filter: blur(52px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+
+    width: 1580px;
+    height: 880px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0.35;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.525 ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+}
+
+a{
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    color: #fefefe;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+    border: solid 2px #fefefe;
+
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+
+    cursor: pointer;
+
+}
+
+a:hover{
+    color: #141414;
+    background: #fefefe;
+}
+
+#gamepadText{
+    top: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    position: absolute;
+    color: #e95050;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+    border: solid 2px #e95050;
+
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+
+    cursor: wait;
+
+}
