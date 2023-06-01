@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Emil Warelius - 2023" />
+    <meta name="author" content="Emil Warelius" />
+    <meta name="keywords" content="Emil, Warelius, 2023, Portfolio, Web, developer, UI/UX" />
+
+    <link rel="shortcut icon" href="/assets/favicon-8a3fd148.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon-8a3fd148.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmCQcHFzXKcV7HAAACg0lEQVRIx6XVO29cVRQF4O/ccTyByMJMhAjIYzmRjTMTAbKoUCQEgjSIFimUaWhooaKgIx0V8A/gD9Ah8RAtAoUEgrGNHMtRHBMrwh4IfszsQ8F4PHPtPHDWafY+OnvdtR/aVwjRjE/jWrQjP+DpxEp8Hi9GEYR4OS4/cGj/WYrzkUQzfjpUeI4c1+Oc+OTQ4TlyfJVi0YTDYzvFjqGHIFDshmeQpJ6de759fu7dpujZW75xWzKj0X38i0t4zrNdf9aPsppXVPck7BVkM1/I9VzPH+bcvXk/13M9v5c7OXLknC/meq7nC3mzr4zFHlVVU8KCLdDyqySZs9FVuICk2f99fQQ0DEuWbUiSm5YlybIbkmTDsmRYo1TEPkwaxR9WwJzbkmTdPFh1C6Mm70aQnTAm+8sS+Nn2f612BVzXko050deDkoIRU9ixgH9cFSZMCL/ZRFvGlJEBBUODcs6o6Phdx5pFvCSZM+YIqgqFM4oBBaUpnPaolmv+tmjNsBkc97oKOsIx06VJLBGMe0LLqltm3XHctOxNL8iSlrYx4/tGuQ9ZzUmsm3dF27innfKOR2SsaDupNpBAiYCjGtjxvQXJaSOqHpclbfOyhqP3ToGmqrYvrBsy0y1YkqyZVdUsPy8rYNJjOm4a9bZXe6lx2ZKaqX0EJQXZU04Z9Zo3nFYREpIdX7qjWRqiA1M45gM1TypkubsdCld9J3mmNEQHKqh084ze8ki2fGZVRbM0RAcQpAMstp31vIqz9qNvI90NuVsHvaQGuxD3I9jdgrmka5dg9X4E90Sn8O1DEVwqfNzdH4fBnz4SKc7HjUP91tbj3TgiRBHn4uvY/l/Bnfgh3orh8C8WpDlZ1OlfqwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wOS0wN1QwNzoyMzo1MyswMDowMLZW2rkAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDktMDdUMDc6MjM6NTMrMDA6MDDHC2IFAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmCQcHFzS9dm5RAAABEElEQVQoz3WRMUsDQRCFvz091CMgh1iZwiBGCYmgoCD+AUsRRMlPTG0ZC0GQgIWVhSdeCrlUmoCniajzLLKRROK8Ytidx/D2W2zNGtY3TdGHnVsNa0wdjtR09qbIMb2EM2eCT+6Yp4y4B8o4EvpUCAFMplx1nSpXT8c6Ule5zlRXLpMpAIgokdKlwyMpHbqkrBIBEAA4qrySkfDFNw/0eKfKMNnsME6ZGRLabLFIjCiw4YN6Q5Flbnlil0NK3LBE0RuC4XNi1rmkzTYVFkhYIUbjG0J2yDhhDxhwRY3QGxgxe9GzTCappQM1JX/vTJ7ZL7+MjE0K/uRswNwfvONdAc1J/m6yt7CaXZj985fXtv8DXQTNCf5TtE0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMDktMDdUMDc6MjM6NTIrMDA6MDAQIdENAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA5LTA3VDA3OjIzOjUyKzAwOjAwYXxpsQAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiV2FyZWxpdXMubmV0IiwKICAgICJzaG9ydF9uYW1lIjogIldhcmVsaXVzLm5ldCIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogImFuZHJvaWQtY2hyb21lLTE5MngxOTIucG5nIiwKICAgICAgICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAgICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICAgICAgfQogICAgXSwKICAgICJ0aGVtZV9jb2xvciI6ICIjZmVmZWZlIiwKICAgICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmZWZlZmUiLAogICAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIKfQo=">
+    <link rel="mask-icon" href="/assets/safari-pinned-tab-de35a080.svg" color="#f5f5f5">
+    <meta name="msapplication-TileColor" content="#f5f5f5">
+    <meta name="theme-color" content="#f5f5f5">
+
+
+    
+
+    <title>Emil Warelius - 2023</title>
+    <script type="module" crossorigin src="/assets/index-d6c1792a.js"></script>
+    <link rel="stylesheet" href="/assets/index-54ad50ab.css">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <a href="/">Emil Warelius</a>
+        <nav>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="mailto:hello@warelius.net">Contact</a></li>
+            <li><a href="https://www.linkedin.com/in/warelius/"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+
+        <h1>Hi, Emil here! I am UI/UX Developer based in Värnamo, Sweden.</h1>
+        
+
+        <div id="projects-grid">
+          <div class="grid-item col-2">
+            <img src="/assets/dice-application-237a2f5e.png" alt="Dice Application">
+            <div class="overlay hidden">
+              <span class="project-title">Dice Application</span>
+              <span class="project-description">As a part of the Webbtechnologies 5 course, a project was undertaken to develop a dice application using (OOP) concepts. This project aimed to bring the students' understanding of OOP principles into practice by developing a functional application that incorporated the use of classes, objects, methods etc.</span>
+              <div class="lang-and-tech">
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <i class="fa-brands fa-css3-alt fa-2x"></i>
+                <i class="fa-brands fa-js fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="/assets/food-order-f06e9c5b.png" alt="Food-order">
+            <div class="overlay hidden">
+              <span class="project-title">Food Order</span>
+              <span class="project-description">
+                Designed an intuitive and visually appealing interface for a fast food ordering process. The project included UI and UX designing where user testing was conducted to ensure that needs and expectations were met. The end result was a successful food ordering UI with positive feedback from users.
+              </span>
+              <div class="lang-and-tech">
+                <i class="fa-brands fa-figma fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="/assets/trip-it-98929062.png" alt="Trip-it">
+            <div class="overlay hidden">
+              <span class="project-title">Trip-it</span>
+              <span class="project-description">
+                A travel application developed using an external API to provide information services for a selected city. It offers easy access to accomodation, food, and miscellaneous information, streamlining the travel process for users.
+              </span>
+              <div class="lang-and-tech">
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <i class="fa-brands fa-css3-alt fa-2x"></i>
+                <i class="fa-brands fa-js fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="/assets/vb_internal-9104a709.png" alt="ValoeBeats">
+            <div class="overlay hidden">
+              <span class="project-title">ValoeBeats</span>
+              <span class="project-description">
+                An application developed for the producer ValoeBeats. The application was developed to provide a platform for the producer to upload, monetize, and share his music. The application was developed using PHP, SQL, and MySQL.
+              </span>
+              <div class="lang-and-tech">
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <i class="fa-brands fa-css3-alt fa-2x"></i>
+                <i class="fa-brands fa-js fa-2x"></i>
+                <i class="fa-brands fa-php fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="/assets/vb_internal-9104a709.png" alt="ValoeBeats">
+            <div class="overlay hidden">
+              <span class="project-title">ValoeBeats</span>
+              <span class="project-description">
+                An application developed for the producer ValoeBeats. The application was developed to provide a platform for the producer to upload, monetize, and share his music. The application was developed using PHP, SQL, and MySQL.
+              </span>
+              <div class="lang-and-tech">
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <i class="fa-brands fa-css3-alt fa-2x"></i>
+                <i class="fa-brands fa-js fa-2x"></i>
+                <i class="fa-brands fa-php fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item col-2">
+            <img src="/assets/f-o-r-u-m-f3c419bf.png" alt="F-O-R-U-M">
+            <div class="overlay hidden">
+              <span class="project-title">F-O-R-U-M</span>
+              <span class="project-description">
+                This project was undertaken to develop a forum using PHP, SQL, and MySQL. The goal was to provide hands-on experience with these technologies by creating a functional online forum where users could create accounts, post discussions, and interact with each other.
+              </span>
+              <div class="lang-and-tech">
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <i class="fa-brands fa-css3-alt fa-2x"></i>
+                <i class="fa-brands fa-js fa-2x"></i>
+                <i class="fa-brands fa-php fa-2x"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+      <footer>
+        <a href="mailto:hello@warelius.net">hello@warelius.net</a>
+        <p>2023</p>
+      </footer>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/cf61a27cbe.js" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
